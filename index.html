@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Speech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Footer.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="https://speechgen.io/img/SpeechGen5.png" alt=""> SpeechGen.io</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex">
+        <section class=" edit-box">
+            <div class="custom-select">
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+            </div>
+            <div class="flex-box">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" onclick="f1()" class=" shadow-sm btn btn-outline-secondary"
+                            data-toggle="tooltip" data-placement="top" title="Bold Text">Bold</button>
+                        <button type="button" onclick="f2()" class="shadow-sm btn btn-outline-success"
+                            data-toggle="tooltip" data-placement="top" title="Italic Text">Italic</button>
+                        <button type="button" onclick="f3()" class=" shadow-sm btn btn-outline-primary"
+                            data-toggle="tooltip" data-placement="top" title="Left Align"><i
+                                class="fas fa-align-left"></i></button>
+                        <button type="button" onclick="f4()" class="btn shadow-sm btn-outline-secondary"
+                            data-toggle="tooltip" data-placement="top" title="Center Align"><i
+                                class="fas fa-align-center"></i></button>
+                        <button type="button" onclick="f5()" class="btn shadow-sm btn-outline-primary"
+                            data-toggle="tooltip" data-placement="top" title="Right Align"><i
+                                class="fas fa-align-right"></i></button>
+                        <button type="button" onclick="f6()" class="btn shadow-sm btn-outline-secondary"
+                            data-toggle="tooltip" data-placement="top" title="Uppercase Text">Upper Case</button>
+                        <button type="button" onclick="f7()" class="btn shadow-sm btn-outline-primary"
+                            data-toggle="tooltip" data-placement="top" title="Lowercase Text">Lower Case</button>
+                        <button type="button" onclick="f8()" class="btn shadow-sm btn-outline-primary"
+                            data-toggle="tooltip" data-placement="top" title="Capitalize Text">Capitalize</button>
+                        <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side"
+                            data-toggle="tooltip" data-placement="top" title="Tooltip on top">Clear Text</button>
+                        <button type="button" onclick="f10()" class="btn shadow-sm btn-outline-primary side"
+                            data-toggle="tooltip" data-placement="top" title="Download">Download</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                </div>
+                <div class="col-md-6 col-sm-9">
+                    <div class="flex-box">
+                        <textarea id="textarea1" class="input shadow" name="name" rows="15" cols="74"
+                            placeholder="Your text here "></textarea>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <div class="custom-select">
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+            </div>
+            <button class="btn10">Generate Speech</button>
+        </section>
+        <section>
+            <p>Balance</p>
+            <h1>1500 Limits</h1>
+            <button>Get more limits</button>
+        </section>
+    </div>
+    <div class="container">
+        <p>Create realistic Voiceovers online! Insert any text to generate speech and download audio mp3 or wav for any
+            purpose. Speak a text with AI-powered voices.You can convert text to voice for free for reference only. For
+            all features, purchase the paid plans</p>
+        <h1 class="margin">AI voice examples</h1>
+        <div class="voicBoxContainer">
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+            <div class="card">
+                <div class="voicBox">
+                    <i class="fa-regular fa-user iconHeight"></i>
+                    <p>Angel</p>
+                </div>
+                <i class="fa-regular fa-circle-play iconHeight"></i>
+            </div>
+
+        </div>
+        <div class="aTag">
+            <a href="#">Full voiсes list</a>
+        </div>
+    </div>
+    <section>
+        <div class="custom-bg">
+            <h1>How to convert text into speech?</h1>
+            <div class="content">
+                <div>
+                    <div class="numbric">1</div>
+                    <hr />
+                    <div class="numbric">2</div>
+                    <hr />
+                    <div class="numbric">3</div>
+                </div>
+                <div>
+                    <ul>
+                        <li>Uust type some text or import your written conntent</li>
+                        <li>Press "generate" button</li>
+                        <li>Download MP3 / WAV</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="benefit">Full list of benefits of neural voices</h1>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Downloadable TTS</h1>
+                <p class="margin">You can download converted audio files in MP3, <br /> WAV, OGG for free</p>
+            </div>
+            <div>
+                <img src="https://i.ibb.co/YBd7Y61/downloadtts.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Long text</h1>
+                <p class="margin">If your Limit balance is sufficient, you can use a <br /> single query to convert a
+                    text of up to 2,000,000 <br /> characters into speech</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/char2m.gif" alt="2 000 000 characters per convert" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Commercial Use</h1>
+                <p class="margin">You can use the generated audio for commercial <br /> purposes. Examples: YouTube, Tik
+                    Tok, Instagram, <br /> Facebook, Twitch, Twitter, Podcasts, Video Ads, <br /> Advertising, E-book,
+                    Presentation and other.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/comerc.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Multi-voice editor</h1>
+                <p class="margin">Dialogue with AI Voices. You can use several <br> voices at once in one text</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/dialog.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Custom voice settings</h1>
+                <p class="margin">Change Speed, Pitch, Stress, Pronunciation, <br> Intonation, Emphasis, Pauses and
+                    more. SSML <br> support.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/nastroika.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Save money</h1>
+                <p class="margin">You spend little on re-dubbing the text. Limits are <br> spent only for changed
+                    sentences in the text.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/savemoney.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Over 1000 Natural Sounding <br> Voices</h1>
+                <p class="margin">Crystal-clear voice over like a Human. Males, <br> females, children's, elderly
+                    voices.</p>
+            </div>
+            <div>
+                <img class="img" src="https://i.ibb.co/X5bxfsp/123456.png" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Powerful support</h1>
+                <p class="margin">We will help you with any questions about text-to- <br>speech. Ask any questions, even
+                    the simplest <br> ones. We are happy to help.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/support.gif" alt="speechgen support" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Compatible with editing <br> programs</h1>
+                <p class="margin">Works with any video creation software: Adobe <br> Premier, After effects, Audition,
+                    DaVinci Resolve, <br> Apple Motion, Camtasia, iMovie, Audacity, etc.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/soft.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Sharing</h1>
+                <p class="margin">You can share the link to the audio. Send audio <br> links to your friends and
+                    colleagues</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/share.jpg" alt="" />
+            </div>
+        </div>
+        <div class="benefitCard margin2">
+            <div>
+                <h1>Cloud save your history</h1>
+                <p class="margin">All your files and texts are automatically saved in <br> your profile on our cloud
+                    server. Add tracks to your <br> favorites in one click.</p>
+            </div>
+            <div>
+                <img src="https://speechgen.io/img/promo/history.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="useTextVoice">
+            <p>Use our text to voice converter to make videos with natural sounding speech!</p>
+        </div>
+    </section>
+    <section class="useTextVoice2 container">
+        <h1>Say goodbye to expensive <br>
+            traditional audio creation</h1>
+        <p>Cheap price. Create a professional voiceover in real time for pennies. it <br> is 100 times cheaper than a
+            live speaker.</p>
+    </section>
+    <section>
+        <div class="benefitCard mtCuston">
+            <div class="container2">
+                <div class="wrapper ">
+                    <h1>SpeechGen</h1>
+                    <div class="banner-image1"> </div>
+                    <div>
+                        <p><i class="fa-solid fa-xmark crossColor"></i> Expensive live speakers,
+                            high prices</p>
+                        <p><i class="fa-solid fa-xmark crossColor"></i> A long search for freelancers and studios</p>
+                        <p><i class="fa-solid fa-xmark crossColor"></i> Editing requires complex tools and knowledge</p>
+                        <p><i class="fa-solid fa-xmark crossColor"></i> The announcer in the studio voices a long time.
+                            It
+                            takes time to give him a task and accept it..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="wrapper ">
+                    <h1>Traditional audio creation</h1>
+                    <div class="banner-image2"> </div>
+                    <div>
+                        <p><i class="fa-solid fa-check checkColor"></i> Affordable tts generation starting at $0.08 per
+                            1000
+                            characters</p>
+                        <p><i class="fa-solid fa-check checkColor"></i> Website accessible in your browser right now</p>
+                        <p><i class="fa-solid fa-check checkColor"></i> Intuitive interface, suitable for beginners</p>
+                        <p><i class="fa-solid fa-check checkColor"></i> SpeechGen generates text from speech very
+                            quickly. A
+                            few clicks and the audio is ready.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Create AI-generated realistic voice-overs.</p>
+    </section>
+
+    <section>
+        <h1>Ways to use. Cases.</h1>
+        <p>See how other people are already using our realistic speech synthesis. There are <br> hundreds of variations
+            in applications. Here are some of them.</p>
+        <div class="useDivGrid">
+            <div class="useDiv item1">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="useDiv item2">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item3">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="useDiv item4">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item5">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item6">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item7">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item8">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item9">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item10">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item11">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item12">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item13">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+            </div>
+            <div class="useDiv item14">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+
+            </div>
+            <div class="useDiv item15">
+                <div>
+                    <h1>voice over for videos</h1>
+                    <p>Commercial, YouTub, Tik Tok, Instagram, Facebook, and other social media. Add voice to any
+                        videos!</p>
+                </div>
+
+            </div>
+
+        </div>
+        <p>Maximize your content`s potential with an audio-version. Increase audience engagement and drive business
+            growth.</p>
+    </section>
+    <section>
+        <h1>Who uses Text to Speech?</h1>
+        <p>SpeechGen.io is a service with artificial intelligence used by about 1,000 people daily <br> for different
+            purposes. Here are examples.</p>
+        <div class="whayUseContainer">
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+            <div class="whayUse">
+                <h1>Video makers</h1>
+                <p>create voiceovers for videos. They generate audio content without expensive studio production.
+                </p>
+            </div>
+
+        </div>
+        <p>Text to Speech enables brands, companies, and organizations to deliver enhanced <br> end-user experience,
+            while minimizing costs.</p>
+    </section>
+    <section>
+        <div>
+            <h2>Frequently Asked Questions</h2>
+            <button class="accordion">What is codingtorque.com?</button>
+            <div class="panel">
+                <p>Coding Torque (codingtorque.com) is a free platform to learn coding for free by making amazing
+                    projects. Here
+                    we share source code of projects that you can copy or keep on secondary screen and type yourself by
+                    looking
+                    into it.</p>
+            </div>
+            <button class="accordion">How can I downlaod your app?</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores
+                    delectus
+                    repellat magni!</p>
+            </div>
+            <button class="accordion">How can I buy your ebook?</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores
+                    delectus
+                    repellat magni!</p>
+            </div>
+        </div>
+        <p>Convert any text to super realistic human voices. See all tariff plans.</p>
+    </section>
+    <section>
+        <h1>Supported Languages</h1>
+        <div class="whayUseContainer2">
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+            <div class="whayUse2">
+                <img src="" alt="">
+                <p>Amharic (Ethiopia)</p>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Something</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Print</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Alternative Ads</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Automation</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Artificial Intelligence</a>
+                    </li>
+
+                    <li>
+                        <a href="#">IoT</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2019 Something. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+
+</html>
